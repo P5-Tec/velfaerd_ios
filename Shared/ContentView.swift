@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+#if os(iOS)
+    @Environment(\.horizontalSizeClass)
+    private var horizontalSizeClass
+#endif
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+            #if os(iOS)
+            if(horizontalSizeClass == .compact){
+                TabBarMenu()
+            } else {
+                NavigationView{
+                    SideBarMenu()
+                    HomeView()
+                }
+            }
+            #else
+                SideBarMenu()
+            #endif
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+            ContentView()
+            .previewInterfaceOrientation(.portrait)
+        }
     }
 }

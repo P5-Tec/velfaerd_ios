@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0800453227560965007C6E86 /* StyrkeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0800453127560965007C6E86 /* StyrkeDetail.swift */; };
+		0800453327560965007C6E86 /* StyrkeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0800453127560965007C6E86 /* StyrkeDetail.swift */; };
+		080E40692768C8C0006C8CCF /* Velfaerds--iOS--Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 080E40682768C8C0006C8CCF /* Velfaerds--iOS--Info.plist */; };
+		088C8B862758CE88006D69E6 /* introvid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 088C8B852758CE88006D69E6 /* introvid.mp4 */; };
+		088C8B872758CE88006D69E6 /* introvid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 088C8B852758CE88006D69E6 /* introvid.mp4 */; };
+		08911AE627575E30001CEFDC /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08911AE527575E30001CEFDC /* SideBarMenu.swift */; };
+		08911AE727575E6B001CEFDC /* StyrkeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B432754B8C5005B43DA /* StyrkeList.swift */; };
+		08911AEA27576D77001CEFDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B072754B5FE005B43DA /* ContentView.swift */; };
+		08911AEB27577099001CEFDC /* TabBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08911AE1275759E7001CEFDC /* TabBarMenu.swift */; };
+		08911AEC2757709A001CEFDC /* TabBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08911AE1275759E7001CEFDC /* TabBarMenu.swift */; };
+		08911AED2757709E001CEFDC /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08911AE527575E30001CEFDC /* SideBarMenu.swift */; };
 		08990B1F2754B5FF005B43DA /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B1E2754B5FF005B43DA /* Tests_iOS.swift */; };
 		08990B212754B5FF005B43DA /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B202754B5FF005B43DA /* Tests_iOSLaunchTests.swift */; };
 		08990B2B2754B5FF005B43DA /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B2A2754B5FF005B43DA /* Tests_macOS.swift */; };
@@ -14,9 +25,25 @@
 		08990B2E2754B5FF005B43DA /* VelfaerdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B062754B5FE005B43DA /* VelfaerdsApp.swift */; };
 		08990B2F2754B5FF005B43DA /* VelfaerdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B062754B5FE005B43DA /* VelfaerdsApp.swift */; };
 		08990B302754B5FF005B43DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B072754B5FE005B43DA /* ContentView.swift */; };
-		08990B312754B5FF005B43DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B072754B5FE005B43DA /* ContentView.swift */; };
 		08990B322754B5FF005B43DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08990B082754B5FF005B43DA /* Assets.xcassets */; };
 		08990B332754B5FF005B43DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08990B082754B5FF005B43DA /* Assets.xcassets */; };
+		08990B442754B8C5005B43DA /* StyrkeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B432754B8C5005B43DA /* StyrkeList.swift */; };
+		08990B482754BBCC005B43DA /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B472754BBCC005B43DA /* QuestionModel.swift */; };
+		08990B492754BBCC005B43DA /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B472754BBCC005B43DA /* QuestionModel.swift */; };
+		08990B4B2754BDC8005B43DA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B4A2754BDC8005B43DA /* ModelData.swift */; };
+		08990B4C2754BDC8005B43DA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B4A2754BDC8005B43DA /* ModelData.swift */; };
+		08990B532754CDA8005B43DA /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 08990B522754CDA8005B43DA /* questions.json */; };
+		08990B542754CDA8005B43DA /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 08990B522754CDA8005B43DA /* questions.json */; };
+		08990B592754CE31005B43DA /* StyrkeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B582754CE31005B43DA /* StyrkeRow.swift */; };
+		08990B5A2754CE31005B43DA /* StyrkeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B582754CE31005B43DA /* StyrkeRow.swift */; };
+		08BEB14027687F89009184E8 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB13F27687F89009184E8 /* PlayerView.swift */; };
+		08BEB14227688519009184E8 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB14127688519009184E8 /* VideoView.swift */; };
+		08FC14342757948600E7AE4B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC14332757948600E7AE4B /* HomeView.swift */; };
+		08FC14352757948600E7AE4B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC14332757948600E7AE4B /* HomeView.swift */; };
+		08FC143727579D6C00E7AE4B /* QuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC143627579D6C00E7AE4B /* QuizPage.swift */; };
+		08FC143827579D6C00E7AE4B /* QuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC143627579D6C00E7AE4B /* QuizPage.swift */; };
+		08FC143C2757AA7800E7AE4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08FC143B2757AA7800E7AE4B /* Localizable.strings */; };
+		08FC143D2757AA7800E7AE4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08FC143B2757AA7800E7AE4B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +64,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0800453127560965007C6E86 /* StyrkeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyrkeDetail.swift; sourceTree = "<group>"; };
+		080E40682768C8C0006C8CCF /* Velfaerds--iOS--Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Velfaerds--iOS--Info.plist"; sourceTree = "<group>"; };
+		088C8B852758CE88006D69E6 /* introvid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introvid.mp4; sourceTree = "<group>"; };
+		08911AE1275759E7001CEFDC /* TabBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMenu.swift; sourceTree = "<group>"; };
+		08911AE527575E30001CEFDC /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
 		08990B062754B5FE005B43DA /* VelfaerdsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelfaerdsApp.swift; sourceTree = "<group>"; };
 		08990B072754B5FE005B43DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08990B082754B5FF005B43DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +81,16 @@
 		08990B262754B5FF005B43DA /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08990B2A2754B5FF005B43DA /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		08990B2C2754B5FF005B43DA /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		08990B432754B8C5005B43DA /* StyrkeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyrkeList.swift; sourceTree = "<group>"; };
+		08990B472754BBCC005B43DA /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		08990B4A2754BDC8005B43DA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		08990B522754CDA8005B43DA /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		08990B582754CE31005B43DA /* StyrkeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyrkeRow.swift; sourceTree = "<group>"; };
+		08BEB13F27687F89009184E8 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		08BEB14127688519009184E8 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		08FC14332757948600E7AE4B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		08FC143627579D6C00E7AE4B /* QuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPage.swift; sourceTree = "<group>"; };
+		08FC143B2757AA7800E7AE4B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +125,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0800453427562AA7007C6E86 /* Styrker */ = {
+			isa = PBXGroup;
+			children = (
+				08990B432754B8C5005B43DA /* StyrkeList.swift */,
+				08990B582754CE31005B43DA /* StyrkeRow.swift */,
+				0800453127560965007C6E86 /* StyrkeDetail.swift */,
+			);
+			path = Styrker;
+			sourceTree = "<group>";
+		};
+		088C8B882758F450006D69E6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				08BEB1492768C3BD009184E8 /* Video */,
+				08BEB13F27687F89009184E8 /* PlayerView.swift */,
+				08BEB14127688519009184E8 /* VideoView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		08990B002754B5FE005B43DA = {
 			isa = PBXGroup;
 			children = (
 				08990B052754B5FE005B43DA /* Shared */,
+				08990B422754B865005B43DA /* iOS */,
 				08990B142754B5FF005B43DA /* macOS */,
 				08990B1D2754B5FF005B43DA /* Tests iOS */,
 				08990B292754B5FF005B43DA /* Tests macOS */,
@@ -97,9 +160,13 @@
 		08990B052754B5FE005B43DA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				08990B4D2754BF26005B43DA /* Views */,
+				08990B452754B8D9005B43DA /* Models */,
+				08990B4E2754C23F005B43DA /* Resources */,
 				08990B062754B5FE005B43DA /* VelfaerdsApp.swift */,
 				08990B072754B5FE005B43DA /* ContentView.swift */,
 				08990B082754B5FF005B43DA /* Assets.xcassets */,
+				088C8B852758CE88006D69E6 /* introvid.mp4 */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -119,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				08990B152754B5FF005B43DA /* macOS.entitlements */,
+				08911AE527575E30001CEFDC /* SideBarMenu.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -135,10 +203,71 @@
 		08990B292754B5FF005B43DA /* Tests macOS */ = {
 			isa = PBXGroup;
 			children = (
+				080E40682768C8C0006C8CCF /* Velfaerds--iOS--Info.plist */,
 				08990B2A2754B5FF005B43DA /* Tests_macOS.swift */,
 				08990B2C2754B5FF005B43DA /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		08990B422754B865005B43DA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				08911AE1275759E7001CEFDC /* TabBarMenu.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		08990B452754B8D9005B43DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08990B472754BBCC005B43DA /* QuestionModel.swift */,
+				08990B4A2754BDC8005B43DA /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08990B4D2754BF26005B43DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				088C8B882758F450006D69E6 /* Shared */,
+				08FC143A2757A2F800E7AE4B /* Quiz */,
+				08FC14392757A2EF00E7AE4B /* Home */,
+				0800453427562AA7007C6E86 /* Styrker */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08990B4E2754C23F005B43DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08FC143B2757AA7800E7AE4B /* Localizable.strings */,
+				08990B522754CDA8005B43DA /* questions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		08BEB1492768C3BD009184E8 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		08FC14392757A2EF00E7AE4B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				08FC14332757948600E7AE4B /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		08FC143A2757A2F800E7AE4B /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				08FC143627579D6C00E7AE4B /* QuizPage.swift */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +375,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				da,
 			);
 			mainGroup = 08990B002754B5FE005B43DA;
 			productRefGroup = 08990B0E2754B5FF005B43DA /* Products */;
@@ -267,6 +396,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08990B322754B5FF005B43DA /* Assets.xcassets in Resources */,
+				08FC143C2757AA7800E7AE4B /* Localizable.strings in Resources */,
+				088C8B862758CE88006D69E6 /* introvid.mp4 in Resources */,
+				08990B532754CDA8005B43DA /* questions.json in Resources */,
+				080E40692768C8C0006C8CCF /* Velfaerds--iOS--Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +408,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				08990B332754B5FF005B43DA /* Assets.xcassets in Resources */,
+				08FC143D2757AA7800E7AE4B /* Localizable.strings in Resources */,
+				088C8B872758CE88006D69E6 /* introvid.mp4 in Resources */,
+				08990B542754CDA8005B43DA /* questions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +435,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0800453227560965007C6E86 /* StyrkeDetail.swift in Sources */,
+				08990B592754CE31005B43DA /* StyrkeRow.swift in Sources */,
 				08990B302754B5FF005B43DA /* ContentView.swift in Sources */,
+				08BEB14027687F89009184E8 /* PlayerView.swift in Sources */,
+				08FC14342757948600E7AE4B /* HomeView.swift in Sources */,
 				08990B2E2754B5FF005B43DA /* VelfaerdsApp.swift in Sources */,
+				08911AEB27577099001CEFDC /* TabBarMenu.swift in Sources */,
+				08990B4B2754BDC8005B43DA /* ModelData.swift in Sources */,
+				08990B442754B8C5005B43DA /* StyrkeList.swift in Sources */,
+				08911AED2757709E001CEFDC /* SideBarMenu.swift in Sources */,
+				08FC143727579D6C00E7AE4B /* QuizPage.swift in Sources */,
+				08990B482754BBCC005B43DA /* QuestionModel.swift in Sources */,
+				08BEB14227688519009184E8 /* VideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +455,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08990B312754B5FF005B43DA /* ContentView.swift in Sources */,
+				08911AE727575E6B001CEFDC /* StyrkeList.swift in Sources */,
+				08911AE627575E30001CEFDC /* SideBarMenu.swift in Sources */,
+				08911AEA27576D77001CEFDC /* ContentView.swift in Sources */,
+				08FC14352757948600E7AE4B /* HomeView.swift in Sources */,
+				08990B5A2754CE31005B43DA /* StyrkeRow.swift in Sources */,
+				08990B4C2754BDC8005B43DA /* ModelData.swift in Sources */,
+				08990B492754BBCC005B43DA /* QuestionModel.swift in Sources */,
+				0800453327560965007C6E86 /* StyrkeDetail.swift in Sources */,
+				08911AEC2757709A001CEFDC /* TabBarMenu.swift in Sources */,
+				08FC143827579D6C00E7AE4B /* QuizPage.swift in Sources */,
 				08990B2F2754B5FF005B43DA /* VelfaerdsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,11 +623,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,11 +654,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
