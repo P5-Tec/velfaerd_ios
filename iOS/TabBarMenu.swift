@@ -23,7 +23,7 @@ struct TabBarMenu: View {
                 Text("Home")
             }.tag(2)
             
-            NavigationView{ QuizPage()}
+            NavigationView{ QuizPage(question: questions[0])}
             .tabItem{
                 Image(systemName: "person.crop.circle")
                 Text("Quiz")

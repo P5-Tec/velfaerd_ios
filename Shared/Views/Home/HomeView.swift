@@ -23,9 +23,8 @@ struct HomeView: View {
             VStack{
                 HStack {
                     VideoView(videoURL: introUrl).frame(width: nil, height: 300)
-                        .cornerRadius(15)
+                        .cornerRadius(15) 
                         .shadow(color: Color.black.opacity(0.2), radius: 30, x: 0, y: 2)
-                        .ignoresSafeArea()
                }.padding()
             }
             Spacer()

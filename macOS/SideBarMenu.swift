@@ -13,7 +13,7 @@ struct SideBarMenu: View {
             NavigationLink(destination: HomeView(), label: {
                 Label("Home", systemImage: "house.fill")
             })
-            NavigationLink(destination: QuizPage(), label: {
+            NavigationLink(destination: QuizPage(question: questions[0]), label: {
                 Label("Quiz", systemImage: "person.crop.circle")
             })
             NavigationLink(destination: StyrkeList(), label: {
