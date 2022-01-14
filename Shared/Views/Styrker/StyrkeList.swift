@@ -15,7 +15,7 @@ struct StyrkeList: View {
             } label: {
                 StyrkeRow(styrke: styrke)
             }
-        }.navigationTitle("De 24 Styrker")
+        }.navigationTitle("💪De 24 Styrker")
     }
 }
 

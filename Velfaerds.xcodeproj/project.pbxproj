@@ -18,6 +18,10 @@
 		08911AEB27577099001CEFDC /* TabBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08911AE1275759E7001CEFDC /* TabBarMenu.swift */; };
 		08911AEC2757709A001CEFDC /* TabBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08911AE1275759E7001CEFDC /* TabBarMenu.swift */; };
 		08911AED2757709E001CEFDC /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08911AE527575E30001CEFDC /* SideBarMenu.swift */; };
+		0893AF3727915AD900716397 /* QuizResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893AF3627915AD900716397 /* QuizResult.swift */; };
+		0893AF3827915AD900716397 /* QuizResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893AF3627915AD900716397 /* QuizResult.swift */; };
+		0893AF3D2791814600716397 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893AF3C2791814600716397 /* CustomSlider.swift */; };
+		0893AF3E2791814600716397 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893AF3C2791814600716397 /* CustomSlider.swift */; };
 		08990B1F2754B5FF005B43DA /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B1E2754B5FF005B43DA /* Tests_iOS.swift */; };
 		08990B212754B5FF005B43DA /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B202754B5FF005B43DA /* Tests_iOSLaunchTests.swift */; };
 		08990B2B2754B5FF005B43DA /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B2A2754B5FF005B43DA /* Tests_macOS.swift */; };
@@ -36,6 +40,10 @@
 		08990B542754CDA8005B43DA /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 08990B522754CDA8005B43DA /* questions.json */; };
 		08990B592754CE31005B43DA /* StyrkeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B582754CE31005B43DA /* StyrkeRow.swift */; };
 		08990B5A2754CE31005B43DA /* StyrkeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08990B582754CE31005B43DA /* StyrkeRow.swift */; };
+		08AE829E27901BBE009E328C /* QuizSelectResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AE829D27901BBE009E328C /* QuizSelectResult.swift */; };
+		08AE829F27901BBE009E328C /* QuizSelectResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AE829D27901BBE009E328C /* QuizSelectResult.swift */; };
+		08AE82A127902833009E328C /* QuizResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AE82A027902833009E328C /* QuizResultRow.swift */; };
+		08AE82A227902833009E328C /* QuizResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AE82A027902833009E328C /* QuizResultRow.swift */; };
 		08BEB14027687F89009184E8 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB13F27687F89009184E8 /* PlayerView.swift */; };
 		08BEB14227688519009184E8 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB14127688519009184E8 /* VideoView.swift */; };
 		08EE0F4A278D883800A89C04 /* QuestionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE0F49278D883800A89C04 /* QuestionsManager.swift */; };
@@ -71,6 +79,8 @@
 		088C8B852758CE88006D69E6 /* introvid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introvid.mp4; sourceTree = "<group>"; };
 		08911AE1275759E7001CEFDC /* TabBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMenu.swift; sourceTree = "<group>"; };
 		08911AE527575E30001CEFDC /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
+		0893AF3627915AD900716397 /* QuizResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResult.swift; sourceTree = "<group>"; };
+		0893AF3C2791814600716397 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		08990B062754B5FE005B43DA /* VelfaerdsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelfaerdsApp.swift; sourceTree = "<group>"; };
 		08990B072754B5FE005B43DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08990B082754B5FF005B43DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +98,8 @@
 		08990B4A2754BDC8005B43DA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		08990B522754CDA8005B43DA /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		08990B582754CE31005B43DA /* StyrkeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyrkeRow.swift; sourceTree = "<group>"; };
+		08AE829D27901BBE009E328C /* QuizSelectResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelectResult.swift; sourceTree = "<group>"; };
+		08AE82A027902833009E328C /* QuizResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultRow.swift; sourceTree = "<group>"; };
 		08BEB13F27687F89009184E8 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		08BEB14127688519009184E8 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		08EE0F49278D883800A89C04 /* QuestionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsManager.swift; sourceTree = "<group>"; };
@@ -252,6 +264,7 @@
 		08B5CC11278C301C0076A980 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0893AF3C2791814600716397 /* CustomSlider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -278,6 +291,9 @@
 			children = (
 				08B5CC11278C301C0076A980 /* Components */,
 				08FC143627579D6C00E7AE4B /* QuizPage.swift */,
+				08AE829D27901BBE009E328C /* QuizSelectResult.swift */,
+				08AE82A027902833009E328C /* QuizResultRow.swift */,
+				0893AF3627915AD900716397 /* QuizResult.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -448,18 +464,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				0800453227560965007C6E86 /* StyrkeDetail.swift in Sources */,
+				0893AF3D2791814600716397 /* CustomSlider.swift in Sources */,
 				08990B592754CE31005B43DA /* StyrkeRow.swift in Sources */,
 				08990B302754B5FF005B43DA /* ContentView.swift in Sources */,
 				08BEB14027687F89009184E8 /* PlayerView.swift in Sources */,
 				08FC14342757948600E7AE4B /* HomeView.swift in Sources */,
 				08990B2E2754B5FF005B43DA /* VelfaerdsApp.swift in Sources */,
 				08911AEB27577099001CEFDC /* TabBarMenu.swift in Sources */,
+				08AE829E27901BBE009E328C /* QuizSelectResult.swift in Sources */,
 				08990B4B2754BDC8005B43DA /* ModelData.swift in Sources */,
 				08990B442754B8C5005B43DA /* StyrkeList.swift in Sources */,
 				08EE0F4A278D883800A89C04 /* QuestionsManager.swift in Sources */,
 				08911AED2757709E001CEFDC /* SideBarMenu.swift in Sources */,
+				0893AF3727915AD900716397 /* QuizResult.swift in Sources */,
 				08FC143727579D6C00E7AE4B /* QuizPage.swift in Sources */,
 				08990B482754BBCC005B43DA /* QuestionModel.swift in Sources */,
+				08AE82A127902833009E328C /* QuizResultRow.swift in Sources */,
 				08BEB14227688519009184E8 /* VideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AE82A227902833009E328C /* QuizResultRow.swift in Sources */,
 				08911AE727575E6B001CEFDC /* StyrkeList.swift in Sources */,
 				08911AE627575E30001CEFDC /* SideBarMenu.swift in Sources */,
 				08911AEA27576D77001CEFDC /* ContentView.swift in Sources */,
@@ -477,6 +498,9 @@
 				08990B4C2754BDC8005B43DA /* ModelData.swift in Sources */,
 				08990B492754BBCC005B43DA /* QuestionModel.swift in Sources */,
 				0800453327560965007C6E86 /* StyrkeDetail.swift in Sources */,
+				08AE829F27901BBE009E328C /* QuizSelectResult.swift in Sources */,
+				0893AF3E2791814600716397 /* CustomSlider.swift in Sources */,
+				0893AF3827915AD900716397 /* QuizResult.swift in Sources */,
 				08911AEC2757709A001CEFDC /* TabBarMenu.swift in Sources */,
 				08FC143827579D6C00E7AE4B /* QuizPage.swift in Sources */,
 				08990B2F2754B5FF005B43DA /* VelfaerdsApp.swift in Sources */,

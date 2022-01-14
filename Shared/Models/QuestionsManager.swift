@@ -6,17 +6,24 @@
 //
 
 import Foundation
+import CoreMedia
 
 class QuestionsManager: ObservableObject{
     private (set) var questions: [Question] = []
+    @Published var question = Question()
     @Published private(set) var length = 0
     @Published private (set) var index = 0
-    @Published private (set) var reachedEnd = false
+    @Published var reachedEnd = false
     
     init(){
+        print("-> viewmodel init")
         Task.init{
             await fetchQuestions()
         }
+    }
+    
+    deinit{
+        print("-> viewModel deinit")
     }
     
     func fetchQuestions() async{
@@ -41,19 +48,36 @@ class QuestionsManager: ObservableObject{
             DispatchQueue.main.async {
                 self.questions = decodedData
                 self.length = self.questions.count
+                self.question = self.questions[self.index]
             }
         }
     }
     
     func goToNextQuestion(){
-        if index + 1 < length{
+        setAnwser()
+        if index + 1 < length {
             index += 1
+            setQuestion()
         } else {
             reachedEnd = true
         }
     }
     
-    func setQuest() -> Question {
-        return questions[index]
+    func goToPrevQuestion(){
+        if index > 0 {
+            index -= 1
+            reachedEnd = false
+            setQuestion()
+        }
     }
+    
+    func setQuestion(){
+        self.question = self.questions[self.index]
+    }
+    
+    func setAnwser(){
+        self.questions[index].answer = question.answer
+    }
+    
+    //TODO - Make a return of array sorted
 }

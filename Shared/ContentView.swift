@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var questionManager = QuestionsManager()
+    //@StateObject var questionManager = QuestionsManager()
 #if os(iOS)
     @Environment(\.horizontalSizeClass)
     private var horizontalSizeClass

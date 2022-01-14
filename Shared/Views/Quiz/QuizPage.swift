@@ -8,35 +8,38 @@
 import SwiftUI
 
 struct QuizPage: View {
-    @State var sliderValue: Double = 3
-    @EnvironmentObject var questionManager: QuestionsManager
+    @StateObject var viewModel = QuestionsManager()
     var question: Question
     
     var body: some View {
         VStack{
+            NavigationLink("", destination: QuizSelectResult(viewModel: viewModel), isActive: $viewModel.reachedEnd)
             Rectangle().frame(height:280).padding()
             HStack{
                 VStack(alignment: .leading){
-                    Text(question.styrkeName).font(.title)
-                    Text(question.styrkeTxt).font(.body)
+                    Text(viewModel.question.styrkeName).font(.title)
+                    Text(viewModel.question.styrkeTxt).font(.body)
                 }
                 Spacer()
             }.padding()
             HStack{
-                Slider(value: $sliderValue, in: 1...5, step: 1) {
+                Slider(value: $viewModel.question.answer, in: 1...5, step: 1) {
                     Text("Styrke value")}
                     minimumValueLabel: { Text("1")}
                     maximumValueLabel: { Text("5")}
                 }.padding()
             Spacer()
             HStack{
-                Button(action: {print("Simple button")},
-                       label: {Text("Next Question")})
+                Button(action: {
+                    viewModel.goToPrevQuestion()},
+                       label: {Text("Previous Question")})
                     .padding()
-                Button(action: {print("Simple button")},
+                Spacer()
+                Button(action: {
+                    viewModel.goToNextQuestion()},
                        label: {Text("Next Question")}).padding()
             }.padding()
-        }.navigationTitle("Quiz")
+        }.navigationTitle("📝Quiz")
     }
 }
 

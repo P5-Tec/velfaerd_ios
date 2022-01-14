@@ -28,7 +28,7 @@ struct HomeView: View {
                }.padding()
             }
             Spacer()
-        }.navigationTitle("Home")
+        }.navigationTitle("🏠Home")
     }
 }
 
