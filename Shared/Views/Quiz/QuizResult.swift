@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct QuizResult: View {
+    @Environment(\.presentationMode) var presentationMode
     @State private var showingSheet = false
     var question: Question
-    @State var Sitems : [Any] = []
     
     var body: some View {
         VStack{
@@ -26,7 +26,7 @@ struct QuizResult: View {
             Button("Share result"){
                 showingSheet.toggle()
             }.sheet(isPresented: $showingSheet){
-                ShareSheet()
+                ShareSheet(qImage: question.imageName, shareMsg:"Test msg")
             }.padding()
         }.navigationTitle("Share page")
             .navigationBarBackButtonHidden(false)
@@ -34,15 +34,25 @@ struct QuizResult: View {
     }
 }
 
-struct ShareSheet : UIViewControllerRepresentable {
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+struct ShareSheet: UIViewControllerRepresentable {
+    var qImage: String
+    var shareImage: UIImage
+    var shareMsg: String
+    let imageProvider: NSItemProvider
+    
+    init(qImage: String, shareMsg: String){
+        self.qImage = qImage
+        self.shareMsg = shareMsg
+        self.shareImage = UIImage(named: qImage)!
+        self.imageProvider = NSItemProvider(object: shareImage)
+    }
+
+    func makeUIViewController(context: Context) -> some UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: [shareImage,shareMsg], applicationActivities: nil)
+        return controller
     }
     
-    let url = URL(string: "https://news.ycombinator.com/")
-    
-    func makeUIViewController(context: Context) -> some UIActivityViewController {
-        let controller = UIActivityViewController(activityItems: [url!], applicationActivities: nil)
-        return controller
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
     }
 }
 

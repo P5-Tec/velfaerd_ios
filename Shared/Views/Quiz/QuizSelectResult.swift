@@ -17,7 +17,7 @@ struct QuizSelectResult: View {
                     QuizResult(question: item)
                 }label: {
                     QuizResultRow(question: item)
-                }
+                }.isDetailLink(false)
             }
         }.navigationTitle("Vælg din styrke")
             .navigationBarTitleDisplayMode(.inline)

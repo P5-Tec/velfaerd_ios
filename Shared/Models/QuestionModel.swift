@@ -23,7 +23,7 @@ struct Question: Hashable, Codable, Comparable, Identifiable{
     var answer: Double
     
     
-    private var imageName: String
+    var imageName: String
     var image: Image {
         Image(imageName)
     }

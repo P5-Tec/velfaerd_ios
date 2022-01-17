@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct QuizPage: View {
+    @Environment(\.presentationMode) var presentationMode
     @StateObject var viewModel = QuestionsManager()
     var question: Question
     

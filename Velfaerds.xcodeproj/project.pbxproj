@@ -153,6 +153,7 @@
 		088C8B882758F450006D69E6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				08B5CC11278C301C0076A980 /* Components */,
 				08BEB1492768C3BD009184E8 /* Video */,
 			);
 			path = Shared;
@@ -289,7 +290,6 @@
 		08FC143A2757A2F800E7AE4B /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				08B5CC11278C301C0076A980 /* Components */,
 				08FC143627579D6C00E7AE4B /* QuizPage.swift */,
 				08AE829D27901BBE009E328C /* QuizSelectResult.swift */,
 				08AE82A027902833009E328C /* QuizResultRow.swift */,
@@ -662,6 +662,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We would like to save this photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -693,6 +694,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We would like to save this photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
