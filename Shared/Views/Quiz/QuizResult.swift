@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct QuizResult: View {
-    @Environment(\.presentationMode) var presentationMode
     @State private var showingSheet = false
     var question: Question
     
     var body: some View {
         VStack{
-            Rectangle().frame(height:280).padding()
+            question.image
+            //Rectangle().frame(height:280).padding()
             HStack{
                 VStack(alignment: .leading){
                     Text(question.styrkeName).font(.title)
@@ -61,5 +61,13 @@ struct QuizResult_Previews: PreviewProvider {
         NavigationView{
             QuizResult(question: questions[0])
         }
+        
+        QuizResult(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 6s")).previewDisplayName("iPhone 6s")
+        
+        QuizResult(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 7")).previewDisplayName("iPhone 7")
+        
+        QuizResult(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 8")).previewDisplayName("iPhone 8")
+        
+        QuizResult(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 12")).previewDisplayName("iPhone 12")
     }
 }

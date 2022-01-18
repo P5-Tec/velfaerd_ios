@@ -44,8 +44,11 @@
 		08AE829F27901BBE009E328C /* QuizSelectResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AE829D27901BBE009E328C /* QuizSelectResult.swift */; };
 		08AE82A127902833009E328C /* QuizResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AE82A027902833009E328C /* QuizResultRow.swift */; };
 		08AE82A227902833009E328C /* QuizResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AE82A027902833009E328C /* QuizResultRow.swift */; };
+		08B28A8E2796E43B006C9E66 /* CatVibing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 08B28A8D2796E43A006C9E66 /* CatVibing.mp4 */; };
+		08B28A8F2796E512006C9E66 /* CatVibing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 08B28A8D2796E43A006C9E66 /* CatVibing.mp4 */; };
 		08BEB14027687F89009184E8 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB13F27687F89009184E8 /* PlayerView.swift */; };
 		08BEB14227688519009184E8 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BEB14127688519009184E8 /* VideoView.swift */; };
+		08D8DF0027958A4B000530E7 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D8DEFF27958A4B000530E7 /* VideoCard.swift */; };
 		08EE0F4A278D883800A89C04 /* QuestionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE0F49278D883800A89C04 /* QuestionsManager.swift */; };
 		08EE0F4B278D883800A89C04 /* QuestionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE0F49278D883800A89C04 /* QuestionsManager.swift */; };
 		08FC14342757948600E7AE4B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC14332757948600E7AE4B /* HomeView.swift */; };
@@ -100,8 +103,10 @@
 		08990B582754CE31005B43DA /* StyrkeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyrkeRow.swift; sourceTree = "<group>"; };
 		08AE829D27901BBE009E328C /* QuizSelectResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelectResult.swift; sourceTree = "<group>"; };
 		08AE82A027902833009E328C /* QuizResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultRow.swift; sourceTree = "<group>"; };
+		08B28A8D2796E43A006C9E66 /* CatVibing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CatVibing.mp4; sourceTree = "<group>"; };
 		08BEB13F27687F89009184E8 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		08BEB14127688519009184E8 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		08D8DEFF27958A4B000530E7 /* VideoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
 		08EE0F49278D883800A89C04 /* QuestionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsManager.swift; sourceTree = "<group>"; };
 		08FC14332757948600E7AE4B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		08FC143627579D6C00E7AE4B /* QuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPage.swift; sourceTree = "<group>"; };
@@ -180,6 +185,7 @@
 				08990B062754B5FE005B43DA /* VelfaerdsApp.swift */,
 				08990B072754B5FE005B43DA /* ContentView.swift */,
 				08990B082754B5FF005B43DA /* Assets.xcassets */,
+				08B28A8D2796E43A006C9E66 /* CatVibing.mp4 */,
 				088C8B852758CE88006D69E6 /* introvid.mp4 */,
 			);
 			path = Shared;
@@ -275,6 +281,7 @@
 			children = (
 				08BEB13F27687F89009184E8 /* PlayerView.swift */,
 				08BEB14127688519009184E8 /* VideoView.swift */,
+				08D8DEFF27958A4B000530E7 /* VideoCard.swift */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -426,6 +433,7 @@
 				08990B322754B5FF005B43DA /* Assets.xcassets in Resources */,
 				08FC143C2757AA7800E7AE4B /* Localizable.strings in Resources */,
 				088C8B862758CE88006D69E6 /* introvid.mp4 in Resources */,
+				08B28A8E2796E43B006C9E66 /* CatVibing.mp4 in Resources */,
 				08990B532754CDA8005B43DA /* questions.json in Resources */,
 				080E40692768C8C0006C8CCF /* Velfaerds--iOS--Info.plist in Resources */,
 			);
@@ -438,6 +446,7 @@
 				08990B332754B5FF005B43DA /* Assets.xcassets in Resources */,
 				08FC143D2757AA7800E7AE4B /* Localizable.strings in Resources */,
 				088C8B872758CE88006D69E6 /* introvid.mp4 in Resources */,
+				08B28A8F2796E512006C9E66 /* CatVibing.mp4 in Resources */,
 				08990B542754CDA8005B43DA /* questions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +474,7 @@
 			files = (
 				0800453227560965007C6E86 /* StyrkeDetail.swift in Sources */,
 				0893AF3D2791814600716397 /* CustomSlider.swift in Sources */,
+				08D8DF0027958A4B000530E7 /* VideoCard.swift in Sources */,
 				08990B592754CE31005B43DA /* StyrkeRow.swift in Sources */,
 				08990B302754B5FF005B43DA /* ContentView.swift in Sources */,
 				08BEB14027687F89009184E8 /* PlayerView.swift in Sources */,
@@ -659,6 +669,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZWW8JH89N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
@@ -666,7 +677,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -691,6 +702,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZWW8JH89N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
@@ -698,7 +710,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

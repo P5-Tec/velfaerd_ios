@@ -28,12 +28,25 @@ struct Question: Hashable, Codable, Comparable, Identifiable{
         Image(imageName)
     }
     
+    
+    var videoName: String
+    var video: URL {
+        get{
+            let u:URL = (Bundle.main.url(forResource: videoName, withExtension: "mp4")!)
+            return u
+        }
+        set{
+            print("sets nothing")
+        }
+    }
+    
     init(){
         self.id = 0
         self.styrkeName = "None"
         self.styrkeTxt = "None"
         self.imageName = "None"
         self.answer = 0
+        self.videoName = ""
     }
 }
 

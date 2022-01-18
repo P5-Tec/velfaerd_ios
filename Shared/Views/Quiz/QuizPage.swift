@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct QuizPage: View {
-    @Environment(\.presentationMode) var presentationMode
+    
     @StateObject var viewModel = QuestionsManager()
     var question: Question
     
     var body: some View {
         VStack{
             NavigationLink("", destination: QuizSelectResult(viewModel: viewModel), isActive: $viewModel.reachedEnd)
-            Rectangle().frame(height:280).padding()
+            VideoCard(videoUrl: $viewModel.question.video).frame(width: nil, height: 250).cornerRadius(5).padding()
             HStack{
                 VStack(alignment: .leading){
                     Text(viewModel.question.styrkeName).font(.title)
@@ -47,7 +47,14 @@ struct QuizPage: View {
 struct QuizPage_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            QuizPage(question: questions[0]).environmentObject(QuestionsManager())
+            QuizPage(question: questions[0]).environmentObject(QuestionsManager()).previewDevice(PreviewDevice(rawValue: "iPhone 6s")).previewDisplayName("iPhone 6s")
         }
+            QuizPage(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 6s")).previewDisplayName("iPhone 6s")
+            
+            QuizPage(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 7")).previewDisplayName("iPhone 7")
+            
+            QuizPage(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 8")).previewDisplayName("iPhone 8")
+            
+            QuizPage(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 12")).previewDisplayName("iPhone 12")
     }
 }

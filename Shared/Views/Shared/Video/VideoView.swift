@@ -11,25 +11,29 @@ import AVFoundation
 import AVKit
 
 struct VideoView: UIViewRepresentable {
-    var videoURL: URL
+    @Binding var videoURL: URL
+    @Binding var isPlaying: Bool
     
-    func makeUIView(context: Context) -> some UIView {
+    func makeUIView(context: Context) -> PlayerView {
         return PlayerView(frame: .zero, url: videoURL)
     }
     
-    func updateUIView(_ uiView: UIViewType, context: Context) {
+    func updateUIView(_ uiView: PlayerView, context: Context) {
+        print("videoview: \(videoURL)")
+        if(isPlaying){
+            uiView.startPlayer()
+        } else{
+            uiView.stopPlayer()
+        }
     }
-    
 }
 
+
+
 struct VideoView_Previews: PreviewProvider {
-    
     static var url: URL = (Bundle.main.url(forResource: "introvid", withExtension: "mp4")!)
     
-    static var url2:URL = URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!
-
-    
     static var previews: some View{
-        VideoView(videoURL: url).frame(width: nil, height: 300)
+        VideoView(videoURL: .constant((url)), isPlaying: .constant(false)).frame(width: nil, height: 300)
     }
 }

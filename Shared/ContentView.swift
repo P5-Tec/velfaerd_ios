@@ -33,6 +33,14 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
             ContentView()
             .previewInterfaceOrientation(.portrait)
+        
+        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone 6s")).previewDisplayName("iPhone 6s")
+        
+        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone 7")).previewDisplayName("iPhone 7")
+        
+        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone 8")).previewDisplayName("iPhone 8")
+        
+        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone 12")).previewDisplayName("iPhone 12")
         }
     }
 }

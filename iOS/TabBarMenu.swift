@@ -13,7 +13,8 @@ struct TabBarMenu: View {
         TabView(selection: $defaultSelection){
             NavigationView{ StyrkeList()}
             .tabItem{
-                Image(systemName: "person.crop.circle")
+                //Image(systemName: "list.dash")
+                Image(systemName: "list.bullet.rectangle.portrait")
                 Text("De 24 Styrker")
             }.tag(1)
                 
@@ -25,7 +26,7 @@ struct TabBarMenu: View {
             
             NavigationView{ QuizPage(question: questions[0])}
             .tabItem{
-                Image(systemName: "person.crop.circle")
+                Image(systemName: "brain.head.profile")
                 Text("Quiz")
             }.tag(3)
         }

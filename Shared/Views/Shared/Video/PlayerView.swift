@@ -12,18 +12,16 @@ import UIKit
 
 class PlayerView: UIView{
     private let playerLayer = AVPlayerLayer()
-    private var player: AVPlayer!
-    private var controller: AVPlayerViewController!
+    private var player: AVPlayer = AVPlayer()
+    private var controller: AVPlayerViewController = AVPlayerViewController()
     
     init(frame: CGRect, url: URL){
         super.init(frame: frame)
         
-        let player = AVPlayer(url: url)
-        player.volume = 0
+        player = AVPlayer(url: url)
+        //player.volume = 0
         
-        let playerViewController = AVPlayerViewController()
-        playerViewController.player = player
-        
+        controller.player = player
         playerLayer.player = player
         playerLayer.videoGravity = .resizeAspectFill
         playerLayer.backgroundColor = UIColor.black.cgColor
@@ -38,5 +36,13 @@ class PlayerView: UIView{
     override func layoutSubviews() {
         super.layoutSubviews()
         playerLayer.frame = bounds
+    }
+    
+    func startPlayer(){
+        player.play()
+    }
+    
+    func stopPlayer(){
+        player.pause()
     }
 }

@@ -12,7 +12,7 @@ struct StyrkeDetail: View {
     
     var body: some View {
         VStack{
-            styrke.image
+            VideoCard(videoUrl: .constant(styrke.video)).frame(width: nil, height: 250).cornerRadius(5).padding()
             VStack(alignment: .leading) {
                 Text(styrke.styrkeName).font(.title)
                 HStack {

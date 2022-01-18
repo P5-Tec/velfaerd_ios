@@ -4,6 +4,7 @@
         "styrkeName":"Kreativitet",
         "styrkeTxt":"Du tænker tit ‘Hmm, gad vide, om det kan gøres på en ny eller smartere måde?’ Du er god til at få idéer.",
         "imageName": "kreativitet",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -11,6 +12,7 @@
         "styrkeName":"Nysgerrighed",
         "styrkeTxt":"Du elsker at stille spørgsmål og fordybe dig. Ligesom Spørge Jørgen, der altid spørger “hvorfor dit og hvorfor dat”.",
         "imageName": "nysgerrighed",
+        "videoName": "CatVibing",
         "answer": 3
     },
     {
@@ -18,6 +20,7 @@
         "styrkeName": "Dømmekraft",
         "styrkeTxt": "Du er god til at se ting fra flere vinkler. Du er grundig og drager sjældent forhastede konklusioner.",
         "imageName": "doemmekraft",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -25,6 +28,7 @@
         "styrkeName": "Vidensbegær",
         "styrkeTxt": "Du elsker at lære nye ting. Du suger viden til dig både i skolen og i fritiden.",
         "imageName": "videbegaer",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -32,6 +36,7 @@
         "styrkeName": "Visdom",
         "styrkeTxt": "Dine venner kommer tit til dig for at få gode råd. Du er nemlig god til at åbne nye perspektiver.",
         "imageName": "visdom",
+        "videoName": "CatVibing",
         "answer": 3
     },
     {
@@ -39,6 +44,7 @@
         "styrkeName": "Mod",
         "styrkeTxt": "Du er ikke bange for at kaste dig ud i nye udfordringer. Du siger din mening og tør at gå egne veje.",
         "imageName": "mod",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -46,6 +52,7 @@
         "styrkeName": "Vedholdenhed",
         "styrkeTxt": "Du giver ikke op. Når du går i gang med noget, så gør du det færdigt. Også selvom det trækker tænder ud.",
         "imageName": "vedholdenhed",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -53,6 +60,7 @@
         "styrkeName": "Ærlighed",
         "styrkeTxt": "Du taler sandt. Samtidig gør du sjældent ting, der strider imod dine værdier og principper.",
         "imageName": "aerlighed",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -60,6 +68,7 @@
         "styrkeName": "Entusiasme",
         "styrkeTxt": "Når du bliver optaget af noget, går du 100 % ind i det. Du er fuld af begejstring og engagement.",
         "imageName": "entusiasme",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -67,6 +76,7 @@
         "styrkeName": "Relationer",
         "styrkeTxt": "Du er god til at knytte tætte bånd til andre. Det betyder meget for dig at være tæt på folk, du holder af.",
         "imageName": "relationer",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -74,6 +84,7 @@
         "styrkeName": "Omsorg",
         "styrkeTxt": "Du står klar, når folk omkring dig har brug for hjælp. Du tænker på andre og spreder varme.",
         "imageName": "omsorg",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -81,6 +92,7 @@
         "styrkeName": "Social intelligens",
         "styrkeTxt": "Du er god til at leve dig ind i andre. Folk omkring dig føler sig godt tilpas i dit selskab.",
         "imageName": "socialintelligens",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -88,12 +100,14 @@
         "styrkeName": "Værdsættelse",
         "styrkeTxt": "Du er god til at få øje på det smukke i livet. Om det er et flot landskab eller et perfekt saksespark, så er du helt solgt.",
         "imageName": "vaerdsaettelse",
+        "videoName": "introvid",
         "answer": 3
     },
     {   "id":14,
         "styrkeName": "Taknemmelighed",
         "styrkeTxt": "Du sætter pris på både små og store ting i livet. ‘Tak’ er et af dine yndlingsord. Folk omkring dig ved, at de betyder noget for dig.",
         "imageName": "taknemmelighed",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -101,6 +115,7 @@
         "styrkeName": "Optimisme",
         "styrkeTxt": "Du ser det gode i livet – også selvom tingene ikke altid går din vej. Du ser lyst på fremtiden. Tænker ‘Det skal nok gå’",
         "imageName": "optimisme",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -108,6 +123,7 @@
         "styrkeName": "Humor",
         "styrkeTxt": "Du tager ikke ting så tungt. Du er god til at se ting fra en skæv vinkel og skabe smil omkring dig.",
         "imageName": "humor",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -115,6 +131,7 @@
         "styrkeName": "Spiritualitet",
         "styrkeTxt": "Du ved, at du er en del af noget større. Du er åben for, at ting kan hænge sammen på mange måder.",
         "imageName": "spiritualitet",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -122,6 +139,7 @@
         "styrkeName": "Samarbejde",
         "styrkeTxt": "Andre kan regne med dig. Du er god til at få grupper til at fungere og nyder fællesskaber.",
         "imageName": "samarbejde",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -129,6 +147,7 @@
         "styrkeName": "Retfærdighed",
         "styrkeTxt": "Det er vigtigt for dig, at andre bliver behandlet ordentligt – også selvom du ikke nødvendigvis er enig med dem.",
         "imageName": "retfaerdighed",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -136,6 +155,7 @@
         "styrkeName": "Lederskab",
         "styrkeTxt": "Du kan godt lide at gå forrest og tager ofte styringen i en gruppe. Andre lytter til dig og er tit med på dine idéer.",
         "imageName": "lederskab",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -143,6 +163,7 @@
         "styrkeName":"Tilgivelse",
         "styrkeTxt":"Du bærer ikke nag, når andre sårer dig. Du ved, at alle begår fejl. Hos dig får folk en ny chance.",
         "imageName":"tilgivelse",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -150,6 +171,7 @@
         "styrkeName":"Beskedenhed",
         "styrkeTxt":"Du er ikke typen, der råber “Se mig! Se mig!” Heller ikke når alting bare kører for dig.",
         "imageName":"beskedenhed",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -157,6 +179,7 @@
         "styrkeName":"Omtanke",
         "styrkeTxt":"Du tænker dig om, inden du gør eller siger noget. Du er en grundig person, der træffer fornuftige valg.",
         "imageName":"omtanke",
+        "videoName": "introvid",
         "answer": 3
     },
     {
@@ -164,6 +187,7 @@
         "styrkeName":"Selvkontrol",
         "styrkeTxt":"Du har stor selvdisciplin. Følelser og impulser løber sjældent af med dig.",
         "imageName":"selvkontrol",
+        "videoName": "introvid",
         "answer": 3
     }
 ]
