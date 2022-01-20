@@ -11,8 +11,9 @@ struct StyrkeDetail: View {
     var styrke: Question
     
     var body: some View {
+        
         VStack{
-            VideoCard(videoUrl: .constant(styrke.video)).frame(width: nil, height: 250).cornerRadius(5).padding()
+            VideoCard(videoUrl: .constant(styrke.video), shouldUpdate: .constant(false)).frame(width: nil, height: 250).cornerRadius(5).padding()
             VStack(alignment: .leading) {
                 Text(styrke.styrkeName).font(.title)
                 HStack {

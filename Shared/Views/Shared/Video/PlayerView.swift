@@ -11,8 +11,11 @@ import AVKit
 import UIKit
 
 class PlayerView: UIView{
+    var player: AVPlayer? {
+        get{ playerLayer.player}
+        set{ playerLayer.player = newValue}
+    }
     private let playerLayer = AVPlayerLayer()
-    private var player: AVPlayer = AVPlayer()
     private var controller: AVPlayerViewController = AVPlayerViewController()
     
     init(frame: CGRect, url: URL){
@@ -24,7 +27,8 @@ class PlayerView: UIView{
         controller.player = player
         playerLayer.player = player
         playerLayer.videoGravity = .resizeAspectFill
-        playerLayer.backgroundColor = UIColor.black.cgColor
+        //playerLayer.backgroundColor = UIColor.black.cgColor
+        playerLayer.backgroundColor = UIColor.white.cgColor
         
         layer.addSublayer(playerLayer)
     }
@@ -39,10 +43,10 @@ class PlayerView: UIView{
     }
     
     func startPlayer(){
-        player.play()
+        player?.play()
     }
     
     func stopPlayer(){
-        player.pause()
+        player?.pause()
     }
 }

@@ -10,34 +10,38 @@ import SwiftUI
 struct QuizPage: View {
     
     @StateObject var viewModel = QuestionsManager()
-    var question: Question
+    @StateObject var videoVm: VideoViewViewModel = VideoViewViewModel()
+    @State var question: Question
+    //here to videocard
+    @State var shouldUpdate: Bool = false
     
     var body: some View {
         VStack{
             NavigationLink("", destination: QuizSelectResult(viewModel: viewModel), isActive: $viewModel.reachedEnd)
-            VideoCard(videoUrl: $viewModel.question.video).frame(width: nil, height: 250).cornerRadius(5).padding()
+            VideoCard(videoUrl: $viewModel.question.video, shouldUpdate: $shouldUpdate).frame(width: nil, height:200).padding([.leading, .bottom, .trailing])
             HStack{
                 VStack(alignment: .leading){
                     Text(viewModel.question.styrkeName).font(.title)
                     Text(viewModel.question.styrkeTxt).font(.body)
                 }
-                Spacer()
-            }.padding()
+            }.padding(.horizontal)
             HStack{
                 Slider(value: $viewModel.question.answer, in: 1...5, step: 1) {
                     Text("Styrke value")}
                     minimumValueLabel: { Text("1")}
                     maximumValueLabel: { Text("5")}
-                }.padding()
+            }.padding(.horizontal)
             Spacer()
             HStack{
                 Button(action: {
-                    viewModel.goToPrevQuestion()},
+                    viewModel.goToPrevQuestion()
+                    self.shouldUpdate.toggle()},
                        label: {Text("Previous Question")})
-                    .padding()
+                    .padding(.horizontal)
                 Spacer()
                 Button(action: {
-                    viewModel.goToNextQuestion()},
+                    viewModel.goToNextQuestion()
+                    self.shouldUpdate.toggle()},
                        label: {Text("Next Question")}).padding()
             }.padding()
         }.navigationTitle("📝Quiz")
@@ -45,16 +49,11 @@ struct QuizPage: View {
 }
 
 struct QuizPage_Previews: PreviewProvider {
+    static var shouldUpdate = false
+    
     static var previews: some View {
         NavigationView {
-            QuizPage(question: questions[0]).environmentObject(QuestionsManager()).previewDevice(PreviewDevice(rawValue: "iPhone 6s")).previewDisplayName("iPhone 6s")
+            QuizPage(question: questions[0], shouldUpdate:shouldUpdate).environmentObject(QuestionsManager()).previewDevice(PreviewDevice(rawValue: "iPhone 6s")).previewDisplayName("iPhone 6s")
         }
-            QuizPage(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 6s")).previewDisplayName("iPhone 6s")
-            
-            QuizPage(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 7")).previewDisplayName("iPhone 7")
-            
-            QuizPage(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 8")).previewDisplayName("iPhone 8")
-            
-            QuizPage(question: questions[0]).previewDevice(PreviewDevice(rawValue: "iPhone 12")).previewDisplayName("iPhone 12")
     }
 }

@@ -9,14 +9,17 @@ import SwiftUI
 
 struct VideoCard: View {
     @Binding var videoUrl: URL
-    @State var ShowPlayerIcon: Bool = true
+    //here -> videoview
+    @Binding var shouldUpdate: Bool
+    @State var showPlayerIcon: Bool = true
     @State var isPlaying: Bool = false
+    @StateObject var videoVm: VideoViewViewModel = VideoViewViewModel()
     
     var body: some View {
         VStack{
             ZStack{
-                VideoView(videoURL: $videoUrl,isPlaying: self.$isPlaying)
-                    if ShowPlayerIcon {
+                VideoView(videoURL: $videoUrl, isPlaying: $isPlaying, shouldUpdate: $shouldUpdate, videoVm: self.videoVm)
+                    if showPlayerIcon {
                         Image(systemName: "play.circle.fill")
                             .resizable()
                             .scaledToFit()
@@ -24,10 +27,8 @@ struct VideoCard: View {
                             .foregroundColor(Color.blue)
                     }
             }.onTapGesture {
-                //update to start / stop player
-                print("cardView: \($videoUrl)")
-                ShowPlayerIcon.toggle()
-                isPlaying.toggle()
+                videoVm.isPlaying.toggle()
+                showPlayerIcon.toggle()
             }
         }
 }
@@ -35,8 +36,10 @@ struct VideoCard: View {
 struct VideoCard_Previews: PreviewProvider {
     static var url: URL = (Bundle.main.url(forResource: "introvid", withExtension: "mp4")!)
     
+    static var tst: VideoViewViewModel = VideoViewViewModel()
+    
     static var previews: some View {
-        VideoCard(videoUrl: .constant((url)))
+        VideoCard(videoUrl: .constant((url)), shouldUpdate:.constant(false), videoVm:tst)
     }
 }
 }

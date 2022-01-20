@@ -16,13 +16,13 @@ struct HomeView: View {
         VStack {
             Spacer()
             VStack {
-                HStack {Image("tecLogo").resizable().aspectRatio(contentMode: .fit)}
                 HStack {Image("vfvoeLogo").resizable().aspectRatio(contentMode: .fit)}
+                HStack {Image("tecLogo").resizable().aspectRatio(contentMode: .fit)}
             }.padding()
             Spacer()
             VStack{
                 HStack {
-                    VideoCard(videoUrl: .constant(introUrl)).frame(width: nil, height: 250).cornerRadius(5)
+                    VideoCard(videoUrl: .constant(introUrl), shouldUpdate: .constant(false)).frame(width: nil, height: 250).cornerRadius(15)
                }.padding()
             }
             Spacer()
